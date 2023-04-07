@@ -15,7 +15,7 @@ export class loginPipe implements PipeTransform {
     console.log(data);
     const validatedData = await validate(data, { whitelist: true });
     console.log(data);
-    if (validatedData.length > 0) throw new Error('ANANIZI SIKEYIM');
+    if (validatedData.length > 0) throw new Error('SOMETHING WRONG');
     console.log(validatedData);
     return data;
   }
